@@ -3,7 +3,7 @@
 //we are using currying technique here
 //param allows to paremetise the store. here we are telling the middleware to log to console
 const logger= param => store => next => action  =>{
-    console.log('param ',param);
-    next(action);
+    //console.log('param ',param);
+   return next(action);
 }
 export default logger;
